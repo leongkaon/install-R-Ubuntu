@@ -17,28 +17,20 @@ read -p "Ready? (Y/N): " yn
 
 #Install R
 sudo apt-get update
-sudo apt-get -y install libssl-dev
-sudo apt-get -y install libcurl4-gnutls-dev libxml2-dev libssl-dev
-sudo apt-get -y install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev
+sudo apt-get -y install build-essential libssl-dev libxml2-dev libcurl4-gnutls-dev libexpat1-dev
 sudo apt-get -y install git git-core git-doc git-email gitweb git-gui gitk git-svn
-sudo apt-get -y install vim
-sudo apt-get -y install rar
-sudo apt-get -y install p7zip-full
-sudo apt-get -y install ssh
-sudo apt install openssh-client
-sudo apt install openssh-server
 
 sudo apt-get -y install r-base r-base-dev
+sudo apt-get -y install gdebi-core
 
 #Install Package
 #devtools
-sudo apt-get -y install libcurl4-gnutls-dev libxml2-dev libssl-dev
 sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
 
 #Shiny & Shiny Server
 sudo su - -c "R -e \"install.packages('shiny', repos = 'http://cran.rstudio.com/')\""
 sudo su - -c "R -e \"install.packages('shinydashboard', repos = 'http://cran.rstudio.com/')\""
-sudo apt-get -y install gdebi-core
+
 wget https://download3.rstudio.org/ubuntu-12.04/x86_64/shiny-server-1.5.3.838-amd64.deb
 sudo gdebi shiny-server-1.5.3.838-amd64.deb
 
