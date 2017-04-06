@@ -2,7 +2,7 @@
 # Program:
 #	Reinstall R, RStudio Server and Shiny Server
 # History:
-# 20170315 leongkaon 0.1.0
+# 20170406 leongkaon 0.1.2
 # Future hope:
 # 1.automatically install JDBC then install rJava
 # 2.install MySQL
