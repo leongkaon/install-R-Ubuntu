@@ -1,6 +1,6 @@
 # install-R-Ubuntu
 
-install R, R packages, RStudio Server and Shiny Server on Ubuntu for YueTeam.
+install R, R packages, RStudio Server and Shiny Server on Ubuntu for NCCU YueTeam.
 
 in terminal:
 
